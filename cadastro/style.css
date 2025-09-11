@@ -27,6 +27,7 @@ header {
 
 .icone_home {
   height: 50px;
+  cursor: pointer;
 }
 
 .box_busca {
@@ -42,6 +43,7 @@ header {
   left: 9px;
   top: 9px;
   fill: #b0b0b0;
+  cursor: pointer;
 }
 
 .logo {
@@ -91,23 +93,122 @@ header {
   justify-content: space-between;
   width: 90%;
   max-width: 1440px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .cadastro_coluna1 {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   width: 45%;
 }
 
 .cadastro_coluna2 {
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
   width: 45%;
 }
 
-.categoria_img{
+.categoria_img {
   display: flex;
+  justify-content: space-between;
 }
 
-.valor_peso{
+.valor_peso {
   display: flex;
+  justify-content: space-between;
+}
+
+.cadastro_coluna2,
+.peso,
+.valor,
+.img,
+.categoria,
+.bolos {
+  display: flex;
+  flex-direction: column;
+}
+
+.box_cadastro label {
+  font-size: 20px;
+}
+
+.box_cadastro input[type="text"],
+.box_cadastro textarea {
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.box_cadastro input[type="text"] {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.categoria{
+  width: 70%;
+}
+
+.box_cadastro textarea {
+  resize: none;
+  height: 200px;
+}
+
+.container_cadastro input[type="button"] {
+  font-size: 26px;
+  margin: 50px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFD188;
+  padding: 10px 200px;
+  box-shadow: 0 4px 4px 2px #00000025;
+  cursor: pointer;
+}
+
+.img{
+  width: 20%;
+}
+
+.img svg {
+  width: 30px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.img div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #B3B3B3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.valor{
+  width: 50%;
+}
+
+.peso{
+  width: 40%;
+}
+
+
+
+
+/* MEDIA */
+@media screen and (max-width: 768px) {
+  .box_cadastro{
+    flex-direction: column;
+  }
+
+  .cadastro_coluna1,
+  .cadastro_coluna2{
+    width: 100%;
+  }
+
+  .container_cadastro input[type="button"]{
+    padding: 10px 100px;
+  }
 }
