@@ -14,10 +14,11 @@ body {
   height: 200px;
   background-color: #FFD18865;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   backdrop-filter: blur(10px);
   top: -210px;
   overflow-y: hidden;
+  transition: .5s;
 }
 
 header {
@@ -72,7 +73,7 @@ header {
   width: 50px;
   color: #000000;
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 
@@ -210,12 +211,17 @@ footer p {
 
   .box_busca {
     position: fixed;
-    top: -100px;
     overflow-y: hidden;
+    top: -100px;
+    z-index: 2;
+    right: 30px;
+    transition: .5s;
+    width: 80%;
   }
-
+  
   .menu_barras{
     display: block;
+    right: 30px;
   }
 
 }
