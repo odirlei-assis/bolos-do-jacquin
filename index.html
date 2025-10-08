@@ -19,9 +19,12 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+  <script defer src="./js/script.js"></script>
 </head>
 
 <body>
+  <div id="sombra"></div>
   <header>
     <div class="container_cabecalho">
       <svg class="icone_home" xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +32,7 @@
         <path fill="currentColor"
           d="M256 32a224 224 0 1 1 0 448 224 224 0 1 1 0-448zm0 480a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM240 352l0-64 32 0 0 64-32 0zm-32 0l-24 0c-13.3 0-24-10.7-24-24l0-121.1 96-74.7 96 74.7 0 121.1c0 13.3-10.7 24-24 24l-24 0 0-64c0-17.7-14.3-32-32-32l-32 0c-17.7 0-32 14.3-32 32l0 64zM128 231.8l0 96.2c0 30.9 25.1 56 56 56l144 0c30.9 0 56-25.1 56-56l0-96.2 6.2 4.8c7 5.4 17 4.2 22.5-2.8s4.2-17-2.8-22.5l-144-112c-5.8-4.5-13.9-4.5-19.6 0l-144 112c-7 5.4-8.2 15.5-2.8 22.5s15.5 8.2 22.5 2.8l6.2-4.8z" />
       </svg>
+
       <div class="box_busca">
         <svg class="icone_lupa" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"><!--! Font Awesome Pro 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. -->
@@ -37,6 +41,7 @@
         </svg>
         <input class="campo_busca" type="text" name="" id="">
       </div>
+
       <svg class="logo" viewBox="0 0 143 67" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_5_328)">
           <path
@@ -58,6 +63,15 @@
           </filter>
         </defs>
       </svg>
+
+      <a class="menu_barras" id="menu_barras" href="#" onclick="mostrarMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640"><!--! Font Awesome Pro 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2025 Fonticons, Inc. -->
+          <path fill="currentColor"
+            d="M96 144C96 135.2 103.2 128 112 128L528 128C536.8 128 544 135.2 544 144C544 152.8 536.8 160 528 160L112 160C103.2 160 96 152.8 96 144zM96 320C96 311.2 103.2 304 112 304L528 304C536.8 304 544 311.2 544 320C544 328.8 536.8 336 528 336L112 336C103.2 336 96 328.8 96 320zM544 496C544 504.8 536.8 512 528 512L112 512C103.2 512 96 504.8 96 496C96 487.2 103.2 480 112 480L528 480C536.8 480 544 487.2 544 496z" />
+        </svg>
+      </a>
+
     </div>
   </header>
 

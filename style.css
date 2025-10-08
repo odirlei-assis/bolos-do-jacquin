@@ -5,8 +5,19 @@
   font-family: "Bellota", system-ui;
 }
 
-body{
+body {
   background-color: #FFF6E8;
+}
+
+#sombra {
+  width: 100vw;
+  height: 200px;
+  background-color: #FFD18865;
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+  top: -210px;
+  overflow-y: hidden;
 }
 
 header {
@@ -55,6 +66,13 @@ header {
   border: solid 1px #cccccc;
   padding-left: 2.5rem;
   font-size: 1rem;
+}
+
+.menu_barras {
+  width: 50px;
+  color: #000000;
+  display: none;
+  z-index: 1;
 }
 
 
@@ -110,14 +128,14 @@ header {
 
 
 /* CARDS */
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
   justify-content: center;
 }
 
-.card{
+.card {
   width: 350px;
   height: 500px;
   background-color: #ffffff;
@@ -133,30 +151,30 @@ header {
   box-shadow: 0 4px 4px 2px #00000025;
 }
 
-.card img{
+.card img {
   width: 100%;
 }
 
 .card p,
-.card span{
+.card span {
   font-size: 18px;
   width: 90%;
 }
 
-.whatsapp{
+.whatsapp {
   position: fixed;
   right: 30px;
   bottom: 30px;
   transition: transform 0.5s ease-in-out,
-              filter 0.5s ease-in-out;
+    filter 0.5s ease-in-out;
 }
 
-.whatsapp img{
+.whatsapp img {
   width: 80px;
   filter: drop-shadow(0 5px 1px #00000025);
 }
 
-.whatsapp:hover{
+.whatsapp:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 10px 2px #00000025);
 }
@@ -166,7 +184,7 @@ header {
 
 
 /* RODAPE */
-footer{
+footer {
   width: 100%;
   height: 60px;
   background-color: #FFD188;
@@ -175,7 +193,7 @@ footer{
   align-items: center;
 }
 
-footer p{
+footer p {
   font-family: "Julius Sans One", sans-serif;
   text-align: center;
 }
@@ -185,8 +203,25 @@ footer p{
 
 
 /* MEDIA */
-@media screen and (max-width: 600px){
-  .banner{
+@media screen and (max-width: 768px) {
+  .icone_home {
+    display: none;
+  }
+
+  .box_busca {
+    position: fixed;
+    top: -100px;
+    overflow-y: hidden;
+  }
+
+  .menu_barras{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
     aspect-ratio: 2.0;
   }
 }
